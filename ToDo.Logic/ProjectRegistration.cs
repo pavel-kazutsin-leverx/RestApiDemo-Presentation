@@ -10,7 +10,7 @@ public static class ProjectRegistration
     public static IServiceCollection RegisterLogicServices(this IServiceCollection services)
     {
         services.AddDbContext<AppDataContext>(builder => builder.UseInMemoryDatabase("ToDoItemsDatabase"));
-        services.AddScoped<ToToItemsService>();
+        services.AddScoped<ToDoItemsService>();
         services.AddScoped<UsersService>();
 
         return services;

@@ -4,11 +4,11 @@ using ToDo.Logic.Models.Dto;
 
 namespace ToDo.Logic.Services;
 
-public class ToToItemsService
+public class ToDoItemsService
 {
     private readonly AppDataContext _dataContext;
     
-    public ToToItemsService(AppDataContext dataContext)
+    public ToDoItemsService(AppDataContext dataContext)
     {
         _dataContext = dataContext;
     }
